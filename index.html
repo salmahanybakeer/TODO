@@ -4,22 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO List</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <div>
-            <input id="input-task" type="text" placeholder="Write a task, press Enter">
-            <button id="add-button">Add</button>
+    <header class="header">
+        <h1>TODO List</h1>
+        <div class="counters">
+            <h3 id="not-started-count">NOT STARTED</h3>
+            <h3 id="in-progress-count">IN PROGRESS</h3>
+            <h3 id="done-count">DONE</h3>
         </div>
-        <!--list-->
-        <ul id="task-list">
-            <li>
-                <!-- to be completed by javascipt since user inputs-->
-                <input type="checkbox">
-                <span>Example task text</span>
-                <button>Delete</button>
-            </li>
-        </ul>
-    </main>
+    </header>
+    <script src="script.js"></script>
 </body>
 </html>
