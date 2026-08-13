@@ -1,0 +1,49 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    line-height: 1.4;
+    height: 100%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+html, body {
+    height: 100%;
+}
+
+/*-------------------------------TOP-HEADER----------------------------*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid black;
+    padding-bottom: 10px;
+}
+
+.counters {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.counters h3 {
+    text-transform: uppercase;
+    color: gray;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+/*-------------------------------ADD-BUTTON----------------------------*/
+#input-task{
+    width:800px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+#add-button{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
