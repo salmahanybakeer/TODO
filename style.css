@@ -32,18 +32,97 @@ html, body {
     font-size: 14px;
     letter-spacing: 0.5px;
 }
+
 /*-------------------------------ADD-BUTTON----------------------------*/
-#input-task{
-    width:800px;
+#input-task {
+    width: 800px;
     height: 40px;
     margin-top: 20px;
 }
 
-#add-button{
+#add-button {
     background-color: red;
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     margin-top: 20px;
+}
+
+/*-------------------------------ADDED-TASKS----------------------------*/
+#task-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+#task-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#task-list li span {
+    font-size: 18px;
+}
+
+#task-list button {
+    padding: 6px 12px;
+    font-size: 13px;
+    border: 1px solid #333;
+    background: white;
+    cursor: pointer;
+    width: 100px;
+}
+
+#task-list button.active {
+    background-color: red;
+    color: white;
+    border-color: red;
+}
+
+#task-list a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+}
+/*-------------------------------TASK-DETAIL-PAGE----------------------------*/
+#task-title {
+    font-weight: normal;
+}
+
+#description-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 500px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+#link{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 10px;
+    font-size: 15px;
+    margin-left: -8px;
+}
+
+#save-btn{
+    background-color: red;
+    color: white;
+    border-color: red;
+    margin-left: 2px;
 }
